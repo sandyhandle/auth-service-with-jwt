@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: Finathon Application 2
+    name: Finathon Application
   datasource:
     url: jdbc:postgresql://localhost:5437/password
     username: santhosh-2
