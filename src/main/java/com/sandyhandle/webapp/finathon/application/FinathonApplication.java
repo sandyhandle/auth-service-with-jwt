@@ -24,15 +24,17 @@ public class FinathonApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 //		AppUser adminAccount = userRepository.findByRole(UserRole.ADMIN);
-
-		AppUser user = new AppUser();
-
-		user.setName("admin");
-		user.setEmail("admin@gmail.com");
-		user.setRole(UserRole.ADMIN);
-		user.setPassword(passwordEncoder.encode("admin"));
-
-		userRepository.save(user);
+      
+    System.out.println( 2 + 2);
+//
+//		AppUser user = new AppUser();
+//
+//		user.setName("admin");
+//		user.setEmail("admin@gmail.com");
+//		user.setRole(UserRole.ADMIN);
+//		user.setPassword(passwordEncoder.encode("admin"));
+//
+//		userRepository.save(user);
 
 	}
 

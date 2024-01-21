@@ -25,8 +25,10 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(request -> request.requestMatchers("/api/v1/auth/**")
-                        .permitAll()
+
+                .authorizeHttpRequests(request -> request
+                        .requestMatchers("/api/v1/auth/**").permitAll()
+                        .requestMatchers("/api/v1/guest/**").permitAll()
                         .requestMatchers("/api/v1/admin-hello").hasAnyAuthority(UserRole.ADMIN.name())
                         .requestMatchers("/api/v1/user-hello").hasAnyAuthority(UserRole.USER.name())
                         .anyRequest().authenticated()
