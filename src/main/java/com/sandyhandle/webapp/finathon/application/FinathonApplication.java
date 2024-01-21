@@ -24,7 +24,8 @@ public class FinathonApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 //		AppUser adminAccount = userRepository.findByRole(UserRole.ADMIN);
-		System.out.println( 2 + 2);
+      
+    System.out.println( 2 + 2);
 //
 //		AppUser user = new AppUser();
 //
